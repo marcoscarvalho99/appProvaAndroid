@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MinhaProva</string>
+    <string name="Button">Button1</string>
+    <string name="Button3">Button3</string>
+    <string name="Button4">Button4</string>
+    <string name="Button2">Button2</string>
+    <string name="TextView1">TextView1</string>
+    <string name="TextView2">TextView2</string>
+    <string name="Digite">Digite</string>
+    <string name="BtnOk">Ok</string>
+    <string name="BtnCancel">Cancelar</string>
+    <string name="Bemvindo">Bem-vindo</string>
+    <string name="Invalido">digite algo por favor!</string>
+    <string name="Proxima">fica parra a proxima!</string>
+    <string name="Otimo">Otimo!</string>
+    <string name="Importante">Pergunta importante!</string>
+    <string name="Cafe">Gostaria de uma xícara de café?</string>
+    <string name="BtnSalvar">Salvar</string>
+    <string name="cadastrado">cadastrado!</string>
+    <string name="Titulo">Titulo:</string>
+    <string name="Autor">Autor</string>
+    <string name="Ano">Ano:</string>
+    <string name="Nota">Nota:</string>
+    <string name="Anterior">Anterior</string>
+    <string name="Proximo">Proximo</string>
+
+
+</resources>
