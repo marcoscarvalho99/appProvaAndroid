@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Nome"
+            android:hint="@string/nome"
             android:inputType="textPersonName" />
 
         <EditText
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="compra"
+            android:hint="@string/Autor"
             android:inputType="textPersonName" />
 
         <EditText
@@ -34,8 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="descricao"
-            android:inputType="textPersonName" />
+            android:hint="@string/Ano"
+            android:inputType="number" />
 
         <RatingBar
             android:id="@+id/ratingBarNota"

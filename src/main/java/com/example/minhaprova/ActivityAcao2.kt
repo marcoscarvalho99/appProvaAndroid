@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.minhaprova.BD.Livro
 import com.example.minhaprova.BD.LivroBDOpener
-import com.example.minhaprova.databinding.ActivityAcao1Binding
 import com.example.minhaprova.databinding.ActivityAcao2Binding
 
 class ActivityAcao2 : AppCompatActivity() {
@@ -26,10 +25,10 @@ class ActivityAcao2 : AppCompatActivity() {
         binding.buttonSalvar.setOnClickListener(){
 
             val name:String=binding.editTextName.text.toString()
-            val compra:String=binding.editTextCompra.text.toString()
-            val descr:String=binding.editTextDescricao.text.toString()
+            val autor:String=binding.editTextCompra.text.toString()
+            val ano:String=binding.editTextDescricao.text.toString()
 
-            var c1 = Livro(0,name ,compra, descr,nota )
+            var c1 = Livro(0,name ,autor, ano,nota )
             val db = LivroBDOpener(this)
             db.insert(c1)
 

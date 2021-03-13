@@ -20,19 +20,19 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         //resposta4
-        Toast.makeText(this, R.string.Bemvindo, Toast.LENGTH_SHORT).show()
+        exibirBoaVinda()
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 
 //resposta6
-        var c1 = Livro(0, "livro1", "sim", "Hatch", 2.2f)
-        var c2 = Livro(0, "livro2", "sim", "Hatch", 2.2f)
+        var c1 = Livro(0, "livro1", "sim", "1996", 2.2f)
+        var c2 = Livro(0, "livro2", "sim", "1995", 2.2f)
         val db = LivroBDOpener(this)
         db.insert(c1)
         db.insert(c2)
-        c1=db.findById(4)
-        Toast.makeText(this,c1.ano.toString(),Toast.LENGTH_LONG).show()
+//        c1=db.findById(4)
+//        Toast.makeText(this,c1.ano.toString(),Toast.LENGTH_LONG).show()
 
 
 //        var livros = db.findAll()
@@ -112,8 +112,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun msgBoasVindas() {
-        val pref: SharedPreferences = getSharedPreferences("PREFS", Context.MODE_PRIVATE)
+    private fun exibirBoaVinda() {
+        val pref: SharedPreferences = getSharedPreferences("pref", Context.MODE_PRIVATE)
         if (pref.getBoolean("boasVindas", true)) {
             Toast.makeText(this, R.string.Bemvindo, Toast.LENGTH_SHORT).show()
             pref.edit().putBoolean("boasVindas", false).apply()

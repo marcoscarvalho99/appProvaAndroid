@@ -23,6 +23,7 @@
     <string name="Nota">Nota:</string>
     <string name="Anterior">Anterior</string>
     <string name="Proximo">Proximo</string>
+    <string name="nome">nome</string>
 
 
 </resources>
